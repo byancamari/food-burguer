@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto:wght@300&display=swap');
+
+:root {
+    --white: #ffff;
+    --red: #d00000;
+    --yellow: #ffba08;
+    --light-blue: #3f88c5;
+    --dark-blue: #032b43;
+    --light-grey: #6a696e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 999;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+}
+
+#menu-bars {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #6a696e;
+}
+
+#logo {
+    padding: 0 25px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(230, 235, 241);
+    user-select: none;
+    font-size: 32px;
+    color: #d00000;
+    font-family: 'Merienda One', cursive;
+}
+
+main {
+    background-color: #242424;
+    position: relative;
+    top: 0px;
+    height: 53.5vh;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+    background-color: var(--red);
+    height: 450px;
+}
+
+.main-content h1 {
+    margin-bottom: 50px;
+    font-weight: 100;
+    font-size: 58px;
+    color: var(--white);
+}
+
+.main-content span {
+    font-weight: 600;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.location-box {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box {
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    height: 60px;
+    width: 60px;
+}
+
+.icon-box i {
+    color: var(--light-grey);
+    font-size: 20px;
+}
+
+.location input {
+    font-size: 20px;
+    position: relative;
+    right: 6px;
+    border-radius: 5px;
+    width: 500px;
+    height: 60px;
+    border: none;
+    outline: none;
+}
+
+.my-loc {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.my-loc a {
+    font-weight: 600;
+    color: var(--white);
+}
+
+#news {
+    height: 700px;
+}
