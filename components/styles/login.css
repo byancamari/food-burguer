@@ -33,3 +33,10 @@ align-items: center;
 padding: 20px;
 border-radius: 20px 0 0 20;
 }
+
+.form-box{
+    background-color:rgb(255, 255, 255, 0.4) ;
+    backdrop-filter: blur (40px);
+
+  }
+
