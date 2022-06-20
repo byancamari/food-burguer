@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../components/styles/login.css">
-    <title>Login</title>
+    <title>Formulário</title>
 </head>
 
 <body>
-    <div class="box">
-      <div class="img-box">
-         <img src="../components/assets/img.login1.jpg" alt="Hamb 1" width="500">
-      </div>
-      <div class="form-box">
-         <h2>Criar Conta</h2>
-         <p>Experimente e se apaixone <a href="#">Login</a>  </p>
-           <form action="#">
-            <div class="input-group">
-               <label for = "nome"> Nome Completo</label>
-               <input type="text" id="nome" placeholder="Digite o seu nome completo">
-            </div>
+    <div class="container">
+        <div class="form-image">
+         <img src="../components/assets/img.login1.jpg">
+  
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                     
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-            <div class="input-group">
-                <label for = "email"> E-mail</label>
-                <input type="email" id="nome" placeholder="Digite o seu email">
-             </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
 
-             <div class="input-group">
-                <label for = "telefone"> Telefone</label>
-                <input type="tel" id="telefone" placeholder="Digite o seu telefone">
-             </div>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
 
-             <div class="input-group w50">
-                <label for = "senha"> Senha</label>
-                <input type="password" id="Senha" placeholder="Digite sua senha">
-             </div>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
 
-             <div class="input-group w50">
-                <label for = "confirmarsenha"> Confirmar Senha</label>
-                <input type="password" id="confirmarsenha" placeholder="Confirme a senha">
-             </div>
-     
-               
-             <div class="input-group">
-            <button>Cadastrar</button>
-             </div>
-               
-           </form>
-      </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
-</html>
+
+</html> 
