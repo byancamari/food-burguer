@@ -7,13 +7,35 @@
     <title>Shoodi</title>
     <link rel="stylesheet" href="../components/styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../scripts/script.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="left">
             <a href="#" id="menu-bars"><i class="fa-solid fa-bars"></i></a>
             <div id="logo">Shoodi</div>
-        </nav>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="search-bar" id="search_bar">
+                    <input type="text" placeholder="Pesquise no Shoodi...">
+                </div>
+                <a href="#" id="search_btn" onclick="search_bar_anim()">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cart-back">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>0</p>
+                </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-right-to-bracket" id="loginbtn"></i></a>
+        </div>
     </header>
 
     <main>
